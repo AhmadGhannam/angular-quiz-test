@@ -1,0 +1,7 @@
+Angular Quiz: Building a Dynamic User Dashboard:
+
+what i did:
+- all the points of quiz was achieved 
+- for caching technique we use interceptor-caching.interceptor.ts
+- this a demo video of execution https://drive.google.com/file/d/1WuRnU33GEBeJMerpB0xsZcEmjGNAAjL-/view?usp=sharing
+ 
