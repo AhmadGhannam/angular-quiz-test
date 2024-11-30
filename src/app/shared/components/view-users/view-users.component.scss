@@ -1,0 +1,34 @@
+
+
+
+
+
+
+.container {
+    background: linear-gradient(to bottom, #ecf5fc, #FFFFFF); /* Gradient from light blue to white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center; 
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+  
+  .btn-primary {
+    background-color: #1976D2; /* A strong blue for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1565C0; /* Slightly darker on hover */
+  }
+  

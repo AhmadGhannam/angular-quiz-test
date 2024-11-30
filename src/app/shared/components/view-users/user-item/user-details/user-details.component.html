@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provider Information</title>
+  <style>
+    /* Embedded CSS */
+    .user-card {
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .user-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .user-details {
+      margin-top: 10px;
+    }
+   
+  </style>
+</head>
+<body>
+
+  <div *ngIf="isLoading">
+    Loading...
+  </div>
+
+  <div class="user-card" style="width: 75%;" *ngIf="!isLoading">
+    <div class="card-content">
+      <img class="user-image" src="{{userInfo.data.avatar}}" alt="user Name">
+      <div class="user-details">
+        <h2 class="user-name">{{userInfo.data.first_name}} {{userInfo.data.last_name}}</h2>
+        <p class="user-email"><strong>Email:</strong> {{userInfo.data.email}}</p>
+        <p class="user-address"><strong>ID:</strong> {{userInfo.data.id}}</p>
+      </div>
+    </div>
+    <div class="card-actions">
+      <button class="icon-button" (click)="navigateBack()" title="Back to Main Page">
+        <i class="material-icons">arrow_back</i>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

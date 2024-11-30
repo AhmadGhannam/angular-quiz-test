@@ -1,0 +1,18 @@
+<div class="container">
+    <div *ngFor="let user of userDetails; let i = index" >
+        <app-user-item *ngIf = "!isloadingMode"
+            [userItem]="user"
+            [index]="i"
+            (click)="onuserSelected(user)">
+        </app-user-item>
+    </div>
+    <div class="loading-container" *ngIf = "isloadingMode">
+        <app-loading ></app-loading>
+    </div>
+    <!-- Primary Button -->
+     <br><br>
+    <button class="btn btn-primary" (click)="viewMore()"  *ngIf = "!isloadingMode2 && !showClick">view more</button>
+    <div class="loading-container" *ngIf = "isloadingMode2">
+        <app-loading ></app-loading>
+    </div>
+</div>
